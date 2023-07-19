@@ -1,312 +1,20 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <!-- <style>
-        html a {
-            text-decoration: none !important;
-        }
-
-        p {
-            color: #1E1E1E;
-        }
-
-        body,
-        body * {
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Arial', sans-serif;
-            display: flex;
-            position: relative;
-            flex-direction: column;
-            justify-content: center;
-            flex-wrap: wrap;
-            box-sizing: border-box;
-            align-content: stretch;
-            align-items: center;
-        }
-
-        .hero-bg {
-            background-image: url(https://www.clutec.com/templates/medical/hero.jpg);
-            display: flex;
-            padding: 0 35px;
-            flex-direction: column;
-            justify-content: center;
-            height: 320px;
-            width: 600px !important;
-            text-align: left !important;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        .section {
-            margin-bottom: 25px;
-            text-align: center;
-            width: 490px;
-        }
-
-        .logo {
-            height: 50px;
-            max-width: fit-content;
-            margin-bottom: 25px;
-            position: relative;
-        }
-
-        .hero-bg .heading {
-            font-size: 26px;
-            text-align: left;
-        }
-
-        .heading {
-            font-size: 24px;
-            text-align: center;
-            margin-bottom: 15px;
-            color: #5CAE17;
-        }
-
-        .choose .heading {
-            margin-bottom: 25px;
-        }
-
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 14px;
-            background: linear-gradient(180deg, #18D5F8 0%, #0099ED 100%);
-            border-radius: 10px;
-            color: #ffffff;
-            text-decoration: none;
-            max-width: fit-content;
-            margin-top: 10px;
-        }
-
-        .button:hover {
-            background: #0998E7;
-        }
-
-        .body-text {
-            font-size: 18px;
-            margin: 0;
-        }
-
-        .image-row {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            gap: 20px;
-            position: relative;
-        }
-
-        .image {
-            display: flex;
-            padding: 5px;
-            width: fit-content;
-            height: fit-content;
-        }
-
-        .icon-box {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            position: relative;
-        }
-
-        .circle1 {
-            position: absolute;
-            width: 244px;
-            height: 269px;
-            left: -80px;
-            top: 499px;
-            background: #B5FED0;
-            filter: blur(175px);
-        }
-
-        .circle2 {
-            position: absolute;
-            width: 190.52px;
-            height: 273.29px;
-            left: -117px;
-            top: 771.9px;
-
-            background: #BAF1FF;
-            filter: blur(217.5px);
-            border-radius: 97px;
-            transform: rotate(-37.51deg);
-        }
-
-        .icon-box img {
-            margin-bottom: 5px;
-        }
-
-        .icon-box span {
-            font-weight: 500;
-            font-size: 16px;
-            font-style: normal;
-            text-align: center;
-
-            color: #1E1E1E;
-        }
-
-        .social-box {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 20px;
-            gap: 15px;
-        }
-
-        .social-icon img {
-            width: 26px;
-        }
-
-        .contact-icon {
-            display: flex;
-            flex-direction: column;
-            margin: 0 10px;
-            padding: 25px 10px;
-            text-align: center;
-        }
-
-        .box-container {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 20px;
-        }
-
-        .box-container p {
-            font-style: normal;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 18px;
-            text-align: center;
-        }
-
-        .box {
-            flex: 1;
-            margin: 0 10px;
-            padding: 25px 10px;
-            text-align: center;
-            background: linear-gradient(180deg, #E3FFD9 0%, rgba(238, 255, 244, 0) 100%);
-            box-shadow: 0px 1px 15px 1px rgba(0, 0, 0, 0.15);
-            border-radius: 25px;
-        }
-
-        .box:hover {
-            background: #E3FFD9;
-        }
-
-        .icon {
-            width: 50px;
-            height: 50px;
-            margin-bottom: 10px;
-        }
-
-        .title {
-            font-size: 16px;
-            font-weight: 600;
-            line-height: 24px;
-            letter-spacing: 0em;
-            text-align: center;
-            margin-bottom: 10px;
-        }
-
-        .description {
-            font-size: 16px;
-        }
-
-        .section .unsubscribe {
-            font-size: 12px;
-        }
-
-        .unsubscribe a {
-            font-weight: 600;
-            font-style: normal;
-            text-decoration: none;
-            color: #5CAE17;
-        }
-
-        .ellipse-2,
-        .ellipse-2 * {
-            box-sizing: border-box;
-        }
-
-        .ellipse-2 {
-            background: var(--green-primary-7, #b5fed0);
-            border-radius: 50%;
-            width: 244px;
-            left: 540px;
-            height: 269px;
-            top: 480px;
-            position: absolute;
-            filter: blur(175px);
-        }
-
-        .rectangle-3,
-        .rectangle-3 * {
-            box-sizing: border-box;
-        }
-
-        .rectangle-3 {
-            background: #baf1ff;
-            border-radius: 97px;
-            width: 190.52px;
-            height: 273.29px;
-            position: absolute;
-            left: 540px;
-            transform-origin: 0 0;
-            transform: rotate(-37.505deg) scale(1, 1);
-            filter: blur(217.5px);
-        }
-
-        .rectangle-4,
-        .rectangle-4 * {
-            box-sizing: border-box;
-        }
-
-        .rectangle-4 {
-            background: #baf1ff;
-            border-radius: 97px;
-            width: 190.52px;
-            height: 273.29px;
-            position: absolute;
-            transform-origin: 0 0;
-            transform: rotate(-37.505deg) scale(-1, 1);
-            filter: blur(217.5px);
-            right: 520px;
-            bottom: 260px;
-        }
-
-        .rectangle-5 {
-            background: var(--green-primary-7, #b5fed0);
-            border-radius: 97px;
-            width: 190.52px;
-            height: 273.29px;
-            position: absolute;
-            transform-origin: 0 0;
-            transform: rotate(-37.505deg) scale(1, 1);
-            filter: blur(217.5px);
-            bottom: 170px;
-            left: 620px;
-        }
-    </style> -->
-</head>
-<!-- HEllo, I made some changes -->
-
 <body>
 
-    <div style="background: #FDFFFA; display: flex; flex-direction: column; align-items: center;font-family: Arial, Helvetica, sans-serif;">
+    <div
+        style="background: #f9fff0; display: flex; flex-direction: column; align-items: center;font-family: Arial, Helvetica, sans-serif;">
         <div
             style="background-image: url(https://www.clutec.com/templates/medical/hero.jpg); display: flex; padding: 0 35px; flex-direction: column; justify-content: center; height: 320px; width: 600px !important; text-align: left !important; background-repeat: no-repeat; background-size: cover;">
             <a href="https://clutec.com/">
                 <img src="https://www.clutec.com/templates/medical/logo.png" alt=""
                     style="height: 50px; max-width: fit-content; margin-bottom: 25px; position: relative;">
             </a>
-            <h1 style="font-size: 26px; text-align: left;">Innovative Solutions <br>for Medical
+            <h1 style="font-size: 26px; text-align: left; color: #1E1E1E;">Innovative Solutions <br>for Medical
                 <br>Equipment Recycling
             </h1>
-            <a href="https://clutec.com/contact-us/"
+            <a href="https://www.clutec.com/contact"
                 style="display: inline-block; padding: 10px 20px; font-size: 14px; background: linear-gradient(180deg, #18D5F8 0%, #0099ED 100%); border-radius: 10px; color: #ffffff; text-decoration: none; max-width: fit-content; margin-top: 10px;">SCHEDULE
                 A PICK UP</a>
         </div>
@@ -321,7 +29,7 @@
                 of outdated devices. Improper disposal jeopardizes the environment and the security of sensitive patient
                 data. Rely on our expertise and dedication for a comprehensive solution.</p>
             <a style="display: inline-block;padding: 10px 20px;font-size: 14px;background: linear-gradient(180deg, #18D5F8 0%, #0099ED 100%);border-radius: 10px;color: #ffffff;text-decoration: none;max-width: fit-content;margin-top: 10px; "
-                href="https://clutec.com/contact-us/">SCHEDULE A PICK UP</a>
+                href="https://www.clutec.com/contact">SCHEDULE A PICK UP</a>
         </div>
 
         <div
@@ -343,7 +51,7 @@
         <div style="margin-bottom: 25px;margin-bottom: 25px;text-align: center;width: 490px;">
             <h2 style="font-size: 24px;text-align: center; margin-bottom: 15px;color: #5CAE17;">Why Choose Clutec?</h2>
             <div style="display: flex;justify-content: center; margin-bottom: 20px;">
-                <!-- hover missing -->
+
                 <div
                     style="flex: 1;margin: 0 10px; padding: 25px 10px;text-align: center;background: linear-gradient(180deg, #E3FFD9 0%, rgba(238, 255, 244, 0) 100%);box-shadow: 0px 1px 15px 1px rgba(0, 0, 0, 0.15);border-radius: 25px;">
                     <img style="width: 50px;height: 50px;margin-bottom: 10px;"
@@ -370,7 +78,7 @@
                 </div>
             </div>
             <div style="display: flex;justify-content: center; margin-bottom: 20px;">
-                <!-- hover missing -->
+
                 <div
                     style="flex: 1;margin: 0 10px; padding: 25px 10px;text-align: center;background: linear-gradient(180deg, #E3FFD9 0%, rgba(238, 255, 244, 0) 100%);box-shadow: 0px 1px 15px 1px rgba(0, 0, 0, 0.15);border-radius: 25px;">
                     <img style="width: 50px;height: 50px;margin-bottom: 10px;"
@@ -395,42 +103,42 @@
                 </div>
             </div>
             <a style="display: inline-block;padding: 10px 20px;font-size: 14px;background: linear-gradient(180deg, #18D5F8 0%, #0099ED 100%);border-radius: 10px;color: #ffffff;text-decoration: none;max-width: fit-content;margin-top: 10px;"
-                href="https://clutec.com/contact-us/">SCHEDULE A PICK UP</a>
+                href="https://www.clutec.com/contact">SCHEDULE A PICK UP</a>
         </div>
         <div style="margin-bottom: 25px;text-align: center;width: 490px;">
             <p>Let's connect through the following channels to discuss your e-waste recycling needs. Keep us in mind for
                 future medical equipment takeout.</p>
             <div style="display: flex;flex-direction: row;justify-content: center;  position: relative;">
-                <!-- Please Check From Here -->
+
                 <div
                     style=" display: flex;flex-direction: column;margin: 0 10px;padding: 25px 10px;text-align: center;">
-                    <a href="tel:3399992180">
+                    <a href="tel:3399992180" style="text-decoration: none;">
                         <img src="https://www.clutec.com/templates/medical/recycling-icon.png" alt=""><br>
-                        <span>Call<br> Recycling</span>
+                        <span style="color: #1E1E1E; margin-top: 5px;">Call<br> Recycling</span>
                     </a>
                 </div>
 
                 <div
                     style=" display: flex;flex-direction: column;margin: 0 10px;padding: 25px 10px;text-align: center;">
-                    <a href="tel:7816963535">
+                    <a href="tel:7816963535" style="text-decoration: none;">
                         <img src="https://www.clutec.com/templates/medical/sales.png" alt=""><br>
-                        <span>Call Sales</span>
+                        <span style="color: #1E1E1E; margin-top: 5px;">Call Sales</span>
                     </a>
                 </div>
 
                 <div
                     style=" display: flex;flex-direction: column;margin: 0 10px;padding: 25px 10px;text-align: center;">
-                    <a href="https://www.clutec.com">
+                    <a href="https://www.clutec.com" style="text-decoration: none;">
                         <img src="https://www.clutec.com/templates/medical/website.png" alt=""><br>
-                        <span>Website</span>
+                        <span style="color: #1E1E1E; margin-top: 5px;">Website</span>
                     </a>
                 </div>
 
                 <div
                     style=" display: flex;flex-direction: column;margin: 0 10px;padding: 25px 10px;text-align: center;">
-                    <a href="mailto:erecycle@clutec.com">
+                    <a href="mailto:erecycle@clutec.com" style="text-decoration: none;">
                         <img src="https://www.clutec.com/templates/medical/email.png" alt=""><br>
-                        <span>Email</span>
+                        <span style="color: #1E1E1E; margin-top: 5px;">Email</span>
                     </a>
                 </div>
 
@@ -448,22 +156,26 @@
             <div style="display: flex;justify-content: center;margin-bottom: 20px;gap: 15px;">
                 <div>
                     <a href="https://www.linkedin.com/company/clutec/" target="_blank">
-                        <img style="width: 26px;" src="https://www.clutec.com/templates/medical/linkedin-icon (2).png" alt="">
+                        <img style="width: 26px;" src="https://www.clutec.com/templates/medical/linkedin-icon (2).png"
+                            alt="">
                     </a>
                 </div>
                 <div>
                     <a href="https://www.instagram.com/clutecrecycling/" target="_blank">
-                        <img style="width: 26px;" src="https://www.clutec.com/templates/medical/instagram-icon.png" alt="">
+                        <img style="width: 26px;" src="https://www.clutec.com/templates/medical/instagram-icon.png"
+                            alt="">
                     </a>
                 </div>
                 <div>
                     <a href="https://www.facebook.com/clutecrecycling" target="_blank">
-                        <img style="width: 26px;" src="https://www.clutec.com/templates/medical/facebook-icon.png" alt="">
+                        <img style="width: 26px;" src="https://www.clutec.com/templates/medical/facebook-icon.png"
+                            alt="">
                     </a>
                 </div>
                 <div>
                     <a href="https://twitter.com/ClutecRecycling" target="_blank">
-                        <img style="width: 26px;" src="https://www.clutec.com/templates/medical/twitter-icon.png" alt="">
+                        <img style="width: 26px;" src="https://www.clutec.com/templates/medical/twitter-icon.png"
+                            alt="">
                     </a>
                 </div>
 
